@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 0.5fr 2.2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+}
+
+.upgrade {
+  background-color: #f8f3ed;
+  text-align: center;
+}
+
+.container {
+  background-color: #dd9955;
+  border-radius: 10px;
+  color: #eecc77;
+}
+
+.container > h2 {
+  color: #f8f3ed;
+  background-color: rgb(45, 45, 43, 20%);
+  max-width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  padding: 0.5rem;
+}
+
+.NomNom {
+  overflow-y: scroll;
+  max-height: 75vh;
+  background-color: #eecc77;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.middle {
+  display: grid;
+  grid-template-rows: 0.1fr 0.05fr 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    "."
+    "cookieContainer"
+    ".";
+}
+
+.cookieContainer {
+  height: 25vh;
+
+  justify-self: center;
+}
+
+.cookie {
+  width: 200px;
+  height: 170px;
+  background-image: url(assets/BigJuicyCookie.jpg);
+  background-repeat: no-repeat;
+  background-size: 124%;
+  background-position: -29px -39px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  border-radius: 126px;
+}
+
+.cookie:hover {
+  transform: scale(105%);
+  transition: 1s;
+  box-shadow: 0px 0px 16px 14px lightgoldenrodyellow;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.banner {
+  position: absolute;
+  top: 10vh;
+  background-image: none;
+  /* background-color: rgb(124, 97, 82, 80%); */
+  background-color: #553311;
+  color: #f8f3ed;
+  min-width: 25vw;
+  /* max-height: 5rem; */
+}
+
+.middle-banner {
+  max-height: 15rem;
+}
+
+.middle {
+  display: grid;
+  grid-template-rows: 0.1fr 0.07fr 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    "."
+    "cookie"
+    ".";
+}
+
+.upgrade-icons {
+  max-height: 15rem;
+}
+
+.right {
+  display: grid;
+  grid-template: 1fr 4fr / 1fr;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+
+section {
+  padding: 1rem;
+  background-color: #b4895c;
+}
+
+.colour-pallet {
+  color: #553311;
+  color: #aa7733;
+  color: #bb8855;
+  color: #dd9955;
+  color: #eecc77;
+  color: #2d2d2b;
+}
+
+.upgradeBtn {
+  width: 100%;
+  margin-top: 0.5rem;
+  background-color: #eecc77;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: transparent;
+  padding: 5px;
+  display: grid;
+  grid-template: 2fr/ 3fr 2fr;
+  text-align: left;
+  cursor: pointer;
+}
+
+.upgradeBtn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.upgradeBtn > h2 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  font-size: 0.8rem;
+}
+
+.upgradeBtn > h3 {
+  font-size: 0.6rem;
+}
+
+.GameName {
+  font-family: cookie;
+  font-size: 100px;
+  color: #f8f3ed;
+  align-self: center;
+  text-align: center;
+}
+
+.modal {
+  padding: 0rem;
+  position: absolute;
+  top: 18vh;
+  left: 37vw;
+  width: 30vw;
+  height: 40vh;
+  background-color: #b79f91;
+  border-radius: 10px;
+  color: #553311;
+  overflow: hidden;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal > h2 {
+  color: #f8f3ed;
+  background-color: rgb(45, 45, 43, 20%);
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  padding: 0.5rem;
+}
+
+.modal > div {
+  padding: 1rem;
+  color: #f8f3ed;
+  list-style: none;
+  font-size: 1rem;
+}
+
+.modalClose {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 20px;
+  font-weight: bolder;
+}
+
+.asset {
+  width: 50px;
+}
+
+.NomNom {
+  max-width: 100%;
+}
+
+.NomNom > li {
+  list-style: none;
+  padding: 10px;
+  background-color: #eecc77;
+  color: #f8f3ed;
+  overflow: hidden;
+}
+
+.NomNom > li > label {
+  display: block;
+  background-color: #dd9955;
+  cursor: pointer;
+  width: 98%;
+  height: fit-content;
+  font-size: 1rem;
+  border: solid #b79f91;
+  padding-left: 10px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.toggle:checked ~ .asset-image-container {
+  max-height: 0;
+  visibility: hidden;
+}
+
+.asset-image-container {
+  padding-top: 8px;
+}
+
+label:hover {
+  background-color: #f8f3ed;
+  color: #2d2d2b;
+}
+
+.statBtn {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: 2px;
+  top: 170px;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 14px;
+  background-image: url("assets/stats.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.statsBtn :hover {
+  display: inline-block;
+}

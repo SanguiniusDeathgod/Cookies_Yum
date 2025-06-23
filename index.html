@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Cookie Game</title>
+  </head>
+  <body>
+    <section>
+      <div class="cookieCounter banner">
+        <h2>Cookies:</h2>
+        <h1 id="counter"></h1>
+        <p>per second: <span id="cps"></span></p>
+      </div>
+    </section>
+    <section class="middle">
+      <div class="middle-banner container">
+        <h1 class="GameName">Cookie Baker</h1>
+        <button id="statBtn" class="statBtn"></button>
+      </div>
+      <div class="cookieContainer">
+        <button id="cookie" class="cookie"></button>
+      </div>
+      <div class="upgrade-icons container">
+        <h2>Active Upgrades</h2>
+        <ul id="NomNom" class="NomNom"></ul>
+      </div>
+    </section>
+    <section class="right">
+      <div id="upgradesContainer" class="container">
+        <h2 class="right-title">Upgrades</h2>
+      </div>
+    </section>
+  </body>
+  <dialog class="modal" id="modal">
+    <h2>Stats</h2>
+    <button id="modalClose" class="modalClose">X</button>
+    <div id="statsContainer"></div>
+  </dialog>
+  <dialog class="modal" id="errorModal">
+    <h2>Sorry</h2>
+    <button id="errorClose" class="modalClose">X</button>
+    <div>
+      <p>You do not have enough cookies to make this purchase</p>
+    </div>
+  </dialog>
+</html>
