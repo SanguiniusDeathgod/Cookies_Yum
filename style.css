@@ -59,7 +59,7 @@ body {
 .cookie {
   width: 200px;
   height: 170px;
-  background-image: url(/assets/BigJuicyCookie.jpg);
+  background-image: url(assets/BigJuicyCookie.jpg);
   background-repeat: no-repeat;
   background-size: 124%;
   background-position: -29px -39px;
@@ -303,7 +303,7 @@ label:hover {
   background-color: transparent;
   border: transparent;
   border-radius: 14px;
-  background-image: url("/assets/stats.png");
+  background-image: url("assets/stats.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
