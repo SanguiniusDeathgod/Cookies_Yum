@@ -59,7 +59,7 @@ body {
 .cookie {
   width: 200px;
   height: 170px;
-  background-image: url(assets/BigJuicyCookie.jpg);
+  background-image: url(/assets/BigJuicyCookie.jpg);
   background-repeat: no-repeat;
   background-size: 124%;
   background-position: -29px -39px;
@@ -129,11 +129,9 @@ body {
   position: absolute;
   top: 10vh;
   background-image: none;
-  /* background-color: rgb(124, 97, 82, 80%); */
   background-color: #553311;
   color: #f8f3ed;
   min-width: 25vw;
-  /* max-height: 5rem; */
 }
 
 .middle-banner {
@@ -296,7 +294,7 @@ label:hover {
   color: #2d2d2b;
 }
 
-.statBtn {
+.statsBtn {
   width: 25px;
   height: 25px;
   position: relative;
@@ -305,12 +303,13 @@ label:hover {
   background-color: transparent;
   border: transparent;
   border-radius: 14px;
-  background-image: url("assets/stats.png");
+  background-image: url("/assets/stats.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  visibility: hidden;
 }
 
-.statsBtn :hover {
-  display: inline-block;
+.statBtn :hover {
+  visibility: visible;
 }

@@ -143,34 +143,34 @@ updateCps();
 
 let images = [
   {
-    "Auto-Clicker": "/assets/cursor.png",
+    "Auto-Clicker": "assets/cursor.png",
   },
   {
-    "Enhanced Oven": "/assets/oven.png",
+    "Enhanced Oven": "assets/oven.png",
   },
   {
-    "Cookie Farm": "/assets/FarmIconTransparent.png",
+    "Cookie Farm": "assets/FarmIconTransparent.png",
   },
   {
-    "Robot Baker": "/assets/Robot.png",
+    "Robot Baker": "assets/Robot.png",
   },
   {
-    "Cookie Factory": "/assets/factory.png",
+    "Cookie Factory": "assets/factory.png",
   },
   {
-    "Magic Flour": "/assets/flour.png",
+    "Magic Flour": "assets/flour.png",
   },
   {
-    "Time Machine": "/assets/time-machine.png",
+    "Time Machine": "assets/time-machine.png",
   },
   {
-    "Quantum Oven": "/assets/quantum.png",
+    "Quantum Oven": "assets/quantum.png",
   },
   {
-    "Alien Technology": "/assets/alien.png",
+    "Alien Technology": "assets/alien.png",
   },
   {
-    "Interdimensional Baker": "/assets/BestBaker.png",
+    "Interdimensional Baker": "assets/BestBaker.png",
   },
 ];
 
